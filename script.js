@@ -1,3 +1,4 @@
+document.getElementById("after-snap").style.display = "none";
 var imageDataArray = [];
 var canvasCount = 35;
 $("#start-btn").click(function () {
@@ -92,4 +93,10 @@ function newCanvasFromImageData(imageDataArray, w, h) {
   tempCtx.putImageData(new ImageData(imageDataArray, w, h), 0, 0);
 
   return canvas;
+}
+
+function afterSnap() {
+  setTimeout(() => {
+    document.getElementById("after-snap").style.display = "block";
+  }, 7000);
 }

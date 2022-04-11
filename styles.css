@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: cursive;
 }
 body {
   margin: 0;
@@ -17,10 +18,12 @@ body {
 }
 #start-btn {
   font-size: 26px;
-  padding: 10px 20px 10px 20px ;
+  padding: 10px 20px 10px 20px;
   margin-top: 30px;
   border-radius: 10px;
   background-size: 50px;
+  display: inline-flex;
+  align-items: center;
 }
 .dust {
   position: absolute;
@@ -32,7 +35,7 @@ body {
   left: -12px;
   height: 80px;
   width: 80px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   user-select: none;
   -moz-user-select: none;
 }
@@ -47,6 +50,9 @@ body {
 
 .glow-div:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 4px 170px rgba(0,194,45,0.56);
+  box-shadow: 0px 4px 170px rgba(0, 194, 45, 0.56);
   background: radial-gradient(#00c22d8f, #ffffff);
+}
+#after-snap {
+  font-size: xx-large;
 }
